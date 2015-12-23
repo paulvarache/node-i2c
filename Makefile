@@ -1,6 +1,6 @@
 # build node-i2c executable when user executes "make"
 install:
-	echo "Building node-i2c for arch ${npm_config_arch}"
+	export npm_config_arch=mips
 	npm install
 	node-gyp configure
 	node-gyp build
