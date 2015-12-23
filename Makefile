@@ -1,5 +1,5 @@
 # build node-i2c executable when user executes "make"
-node-i2c:
+install:
 	npm install
 	node-gyp configure
 	node-gyp build
